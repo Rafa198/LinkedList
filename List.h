@@ -18,16 +18,16 @@ public:
 	List();
 	~List();
 
-	void pop_front();         //удаление первого элемента в списке
+	void pop_front();        
 	void clear();
-	void push_back(T data); //добавить элемент в конец списка
-	int GetSize();         //Количество элементов с списке
+	void push_back(T data); 
+	int GetSize();         
 
-	T& operator[](const int index);    //(перегруженный оператор) возвращает данные из списка по индексу
+	T& operator[](const int index);   
 	void push_front(T data);
-	void insert(T value, int index); //вставить элемент по указанному индексу
-	void removeAt(int index);       //удаление элемента по указанному индексу
-	void pop_back();               //удаление последнего элемента
+	void insert(T value, int index); 
+	void removeAt(int index);       
+	void pop_back();              
 
 
 
@@ -45,7 +45,7 @@ private:
 		}
 	};
 
-	int Size;       //счетчик кол-ва элементов
-	Node<T> *head; //первый элемент списка
+	int Size;       
+	Node<T> *head; 
 };
 #endif //LIST_H
