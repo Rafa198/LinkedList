@@ -26,7 +26,7 @@ void List<T>::push_back(T data)
 	else
 	{
 		Node<T> *current = this->head;
-		while (current->pNext != nullptr) //ищем конец нашего списка
+		while (current->pNext != nullptr) 
 		{
 			current = current->pNext;
 		}
